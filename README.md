@@ -1,5 +1,11 @@
 # spring-6-webapp
-Learn All Things Spring! Spring Framework 6, Spring Boot 3, Spring MVC, Spring Data JPA, Spring Security, Spring WebFlux
+Learn All Things Spring! 
+Spring Framework 6
+Spring Boot 3
+Spring MVC
+Spring Data JPA
+Spring Security
+Spring WebFlux
 # What you'll learn
 1. Learn to Build a Spring Boot Web Application
 2. Perform Dependency Injection with Spring Framework 6
