@@ -2,8 +2,10 @@ package com.acadibotc.springframework.spring6webapp.bootstrap;
 
 import com.acadibotc.springframework.spring6webapp.domain.Author;
 import com.acadibotc.springframework.spring6webapp.domain.Book;
+import com.acadibotc.springframework.spring6webapp.domain.Publisher;
 import com.acadibotc.springframework.spring6webapp.repositories.AuthorRepository;
 import com.acadibotc.springframework.spring6webapp.repositories.BookRepository;
+import com.acadibotc.springframework.spring6webapp.repositories.PublisherRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -13,10 +15,12 @@ public class BootstrapData implements CommandLineRunner {
 
     private final AuthorRepository authorRepository;
     private final BookRepository bookRepository;
+    private final PublisherRepository publisherRepository;
 
-    public BootstrapData(AuthorRepository authorRepository, BookRepository bookRepository) {
+    public BootstrapData(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository) {
         this.authorRepository = authorRepository;
         this.bookRepository = bookRepository;
+        this.publisherRepository = publisherRepository;
     }
 
     @Override
@@ -54,5 +58,11 @@ public class BootstrapData implements CommandLineRunner {
         System.out.println("Author Count:" + authorRepository.count());
         System.out.println("Book Count:" + bookRepository.count());
 
+        Publisher pub = new Publisher();
+        pub.setPublisherName("Anhnt");
+        pub.setAddress("123 Main Street");
+        publisherRepository.save(pub);
+
+        System.out.println("Publishers Count:" + publisherRepository.count());
     }
 }
