@@ -6,6 +6,10 @@ Spring MVC
 Spring Data JPA
 Spring Security
 Spring WebFlux
+
+#Who this course is for:
+This course is ideal for Java developers who wish to use the Spring Framework for enterprise application development
+
 # What you'll learn
 1. Learn to Build a Spring Boot Web Application
 2. Perform Dependency Injection with Spring Framework 6
@@ -25,3 +29,7 @@ Spring WebFlux
 16. Learn Functional Reactive Programming
 17. Learn Spring Data Mongo with Webflux-fn
 18. How to Configure Spring Cloud Gateway
+# Requirements
+- Basic Java knowledge is required
+- HTTP and HTML Knowledge is very helpful
+- Knowledge of SQL and databases is helpful
