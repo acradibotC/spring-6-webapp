@@ -7,7 +7,7 @@ Spring Data JPA
 Spring Security
 Spring WebFlux
 
-#Who this course is for:
+# Who this course is for:
 This course is ideal for Java developers who wish to use the Spring Framework for enterprise application development
 
 # What you'll learn
